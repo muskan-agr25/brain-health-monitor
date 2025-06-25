@@ -13,7 +13,7 @@
 <body>
   <header>
    <div style="display: flex; align-items: center; gap: 10px;">
-  <img src="Screenshot 2025-06-25 010714.png" alt="NeuroNest Logo" class="logo">
+  <img src="assest/Screenshot 2025-06-25 010714.png " alt="NeuroNest Logo" class="logo">
   <span style="font-size: 1.5rem; font-weight: 700;">NeuroNest</span>
 </div>
 
@@ -32,7 +32,7 @@
     <section id="home">
       <h1>Welcome to NeuroNest</h1>
       <p>Your personalized AI companion for early dementia detection and cognitive health tracking.</p>
-      <img src="Screenshot 2025-06-25 010703.png" alt="Brain health illustration" class="main-image">
+      <img src="assest/Screenshot 2025-06-25 010703.png" alt="Brain health illustration" class="main-image">
     </section>
 
     <section id="test">
@@ -48,6 +48,18 @@
     <div class="color-box" id="yellow"></div>
   </div>
   
+  <label for="difficulty">Difficulty:</label>
+<select id="difficulty">
+  <option value="3">Easy</option>
+  <option value="5">Medium</option>
+  <option value="7">Hard</option>
+</select>
+<div id="score">Score: 0</div>
+
+<!-- <button id="muteBtn">🔊</button> -->
+<!-- <audio id="gameAudio" src="assest/red.mp3" loop></audio> -->
+
+
   <button onclick="startGame()">Start Test</button>
   
   <div id="feedback" style="margin-top: 10px; font-weight: bold;"></div>
