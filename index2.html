@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroNest - Early Dementia Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+   <div style="display: flex; align-items: center; gap: 10px;">
+  <img src="Screenshot 2025-06-25 010714.png" alt="NeuroNest Logo" class="logo">
+  <span style="font-size: 1.5rem; font-weight: 700;">NeuroNest</span>
+</div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#test">Memory Test</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#graph">Progress</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to NeuroNest</h1>
+      <p>Your personalized AI companion for early dementia detection and cognitive health tracking.</p>
+      <img src="Screenshot 2025-06-25 010703.png" alt="Brain health illustration" class="main-image">
+    </section>
+
+    <section id="test">
+  <h2>Memory Test</h2>
+  <p><strong>How to play:</strong> Watch the boxes light up in a specific order. When it's your turn, click the boxes in the same sequence.</p>
+  
+  <div id="game-status" style="font-weight: bold; color: #2a8dd2; margin-bottom: 10px;">Click "Start Test" to begin.</div>
+
+  <div id="game-area">
+    <div class="color-box" id="red"></div>
+    <div class="color-box" id="blue"></div>
+    <div class="color-box" id="green"></div>
+    <div class="color-box" id="yellow"></div>
+  </div>
+  
+  <button onclick="startGame()">Start Test</button>
+  
+  <div id="feedback" style="margin-top: 10px; font-weight: bold;"></div>
+</section>
+
+
+    <section id="journal">
+      <h2>Daily Journal</h2>
+      <textarea id="journal-entry" placeholder="How do you feel today?"></textarea>
+      <button onclick="saveJournal()">Save Entry</button>
+      <p id="journal-saved"></p>
+    </section>
+
+    <section id="graph">
+      <h2>Mood Progress</h2>
+      <canvas id="moodChart" width="400" height="200"></canvas>
+      <button onclick="resetMoodData()">Reset Mood Data</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Made with ❤️ to support cognitive wellness | © NeuroNest 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
